@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="refresh" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <title>Grayscale Website</title>
+</head>
+<body>
+    <h1><span id = "one">Gray</span><span id = "two">scale</span> Web<span id = "three">site</span></h1>
+    <div id = "menu"></div>
+    <div class = "shrubs">
+        <a href = "https://en.wikipedia.org/wiki/Shrub"><img src = "{{ url_for('static', filename='images/shrub.jpg') }}" ></a>
+        <img src = "{{ url_for('static', filename='images/yshrub.jpg') }}" >
+        <img src = "{{ url_for('static', filename='images/pshrub.jpg') }}" >
+    </div>
+    <abbr title="This is a website about grayscale shrubs!">What is this website about?</abbr>
+    <input type =  "input" placeholder="Type here..." list = "colors">
+    <datalist id = "colors">
+        <option value="Gray">
+        <option value="Black">
+        <option value="White">
+    </datalist>
+    <dialog open=""><p>Wow</p></dialog>
+    <details>
+        <summary>
+            How Old is this website?
+        </summary>
+        45 years old.
+    </details>
+    <ruby>
+        Grayscale
+        <rt>Gray·scale</rt>
+    </ruby>
+    <progress max = "100" value="30"></progress>
+    <meter min="0" max="100" value="70">70%</meter>
+</body>
+</html>
