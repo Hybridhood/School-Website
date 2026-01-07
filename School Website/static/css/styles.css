@@ -1,0 +1,77 @@
+.shrubs{
+    text-align: center;
+}
+body{
+    background-color: #474747;
+}
+
+input{
+    background-color:  rgb(46, 45, 45); /* Green background */
+    border: none; /* Remove borders */
+    color: white; /* White text */
+    padding: 12px 24px; /* Space inside button */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    transition-duration: 0.3s; /* Smooth hover effect */
+    margin-top: 0.1%
+}
+#menu{
+    text-align: center;
+    height: 80%;
+
+}
+
+#div{
+    text-align: center;
+    font-size: 50px;
+}
+#menu{
+    height: 50px;
+    background-color: rgb(46, 45, 45);
+    margin-bottom: 20px;
+}
+
+#G{
+    color: #EEEEEE;
+    
+}
+
+#R{
+    color: #DCDCDC;
+}
+
+#A{
+    color: #CCCCCC;
+    
+}
+
+#Y{
+    color: #999999; 
+
+}
+
+#S{
+    color: #666666;
+    color: #696969;
+}
+
+#C{
+    color: #696969;
+    
+}
+
+#a{
+    color: #333333;
+}
+
+#L{
+    color: #343434;
+}
+#E{
+
+}
+
