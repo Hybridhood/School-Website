@@ -2,39 +2,63 @@
     text-align: center;
 }
 body{
-    background-color: #474747;
+    background-color: #F2F2F2;
+    overflow-y: scroll;
+    padding-bottom: 6000px
 }
-
-input{
+span{
+    font-size: 20px;
+    margin: 0;
+    align-items: center;
+}
+input[type="button"]{
     background-color:  rgb(46, 45, 45); /* Green background */
+    background-image: linear-gradient(to bottom, rgb(46, 45, 45), rgb(68, 68, 68));
     border: none; /* Remove borders */
     color: white; /* White text */
     padding: 12px 24px; /* Space inside button */
     text-align: center; /* Center text */
     text-decoration: none; /* Remove underline */
-    display: inline-block;
     font-size: 16px;
-    border-radius: 4px; /* Rounded corners */
+    border-radius: 6px; /* Rounded corners */
     cursor: pointer; /* Pointer on hover */
     transition-duration: 0.3s; /* Smooth hover effect */
-    margin-top: 0.1%
 }
-#menu{
-    text-align: center;
-    height: 80%;
-
+#buttons{
+    display: block;
+    float: right;
+}
+input:hover {
+    background-color: rgb(68, 68, 68); /* Darker background on hover */
+    background-image: linear-gradient(to bottom, rgb(68, 68, 68), rgb(90, 90, 90));
+    box-shadow: 0 8px 16px 0 rgb(51, 51, 51);
 }
 
+
+#header{
+    background-color:rgb(255, 255, 255) ;
+    display: flex;
+    justify-content: space-between; /* push children to edges */
+    align-items: center;   
+}
+/*#header::after {
+  content: "";
+  display: table;
+  clear: both;
+}*/
 #div{
-    text-align: center;
-    font-size: 50px;
+    font-size: 35px;
 }
 #menu{
     height: 50px;
-    background-color: rgb(46, 45, 45);
+    background-color: rgb(255, 255, 255);
     margin-bottom: 20px;
-}
+    display: flex;
+    text-align: center;
+    height: 80%;
+    
 
+}
 #G{
     color: #EEEEEE;
     
