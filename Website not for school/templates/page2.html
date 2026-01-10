@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <div   class = "shrubs">
+        <a href = "https://en.wikipedia.org/wiki/Shrub"><img src = "{{ url_for('static', filename='images/shrub.jpg') }}" ></a>
+        <img src = "{{ url_for('static', filename='images/yshrub.jpg') }}" >
+        <img src = "{{ url_for('static', filename='images/pshrub.jpg') }}" >
+        <img src = "{{ url_for('static', filename='images/SBOP.jpeg') }}" >
+    </div>
+
+    <abbr  title="This is a website about grayscale shrubs!">What is this website about?</abbr>
+    <input  type =  "input" placeholder="Type here..." list = "colors">
+    <datalist  id = "colors">
+        <option value="Gray">
+        <option value="Black">
+        <option value="White">
+    </datalist>
+    <dialog ><p>Wow</p></dialog>
+    <details >
+        <summary>
+            How Old is this website?
+        </summary>
+        45 years old.
+        <p>1</p>
+        <p>2</p>
+        <p>33</p>
+        <p>3</p>
+    </details>
+    <ruby >
+        Grayscale
+        <rt>Gray·scale</rt>
+    </ruby>
+    <progress  max = "100" ></progress>
+    <meter  min="0" max="100" value="70">70%</meter>
+</body>
+</html>
