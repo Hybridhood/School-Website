@@ -27,23 +27,33 @@ a{
     transition-duration: 0.3s; 
 }
 #box{
-    display: inline-block;
+    display: flex;
     border-radius: 10px;
-    width: 300px;
+    flex: 0 0 21%;
     height: 150px;  
     background-color: rgb(158, 158, 158);
     margin: 2%;
+    align-items: center;
+    justify-content: center;
+}
+p{
+    background-color: thistle;
 }
 #colors{
-    text-align: center;
+    background-color: seagreen;
+    justify-content: space-evenly;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
 }
 #box:hover{
     background-color: rgb(102, 102, 102);  
+
     /*background-image: linear-gradient(to bottom, rgb(68, 68, 68), rgb(90, 90, 90));*/
     box-shadow: 0 8px 16px 0 rgb(51, 51, 51);
 }
 input:hover {
-    background-color: rgb(255, 255, 255);  
+    background-color: rgb(233, 233, 233);  
     /*background-image: linear-gradient(to bottom, rgb(68, 68, 68), rgb(90, 90, 90));*/
     box-shadow: 0 8px 16px 0 rgb(51, 51, 51);
 }
@@ -53,7 +63,7 @@ input:hover {
 }
 
 #header{
-    background-color:rgb(255, 255, 255) ;
+    background-color:rgb(255, 255, 255);
     display: flex;
     justify-content: space-between; /* push children to edges */
     align-items: center;   
@@ -63,19 +73,15 @@ input:hover {
   display: table;
   clear: both;
 }*/
+span{
+    animation-name: g1;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
 #div{
     font-size: 35px;
 }
-#menu{
-    height: 50px;
-    background-color: rgb(255, 255, 255);
-    margin-bottom: 20px;
-    display: flex;
-    text-align: center;
-    height: 80%;
-    
 
-}
 #G{
     color: #D1D1D1;
     
@@ -111,26 +117,57 @@ input:hover {
 #L{
     color: #343434;
 }
-#E{
 
-}
 #search{
+    background-color: tomato;
+    display: inline-flex;
+    width: 100%;
+    height: 75px;
+    align-items: center;
+    flex-wrap: wrap;
     
 }
 #csearch{
-    height: 45px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    width: 100%;
-    float:right;
+    height: 80%;
+    width: 90%;
+    margin-right: auto;
     border: none;
     
 }
-#csearch::hover {
-  content: "Read this: ";
-  background-color: #5f5f5f;
-}
-#isearch{
-    width: 4%;
 
+img{
+    width: 4%;
+    background-color: royalblue;
+    margin-left: auto;
+}
+#spaces{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-color: lightgreen;
+}
+#menu{
+    margin-right: auto;
+    background-color: red;
+    height: 100%;
+    width: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: g1;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes g1{
+    0%   {color: #D1D1D1;}
+    12.5%  {color: #B3B3B3;}
+    25%  {color: #999999}
+    50% {color: #777777;}
+    62.5%   {color: #555555;}
+    75%  {color: #3A3A3A;}
+    87.5%  {color: #333333;}
+    100% {color: #000000;}
 }
