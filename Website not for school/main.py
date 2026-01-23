@@ -1,7 +1,7 @@
 from flask import Flask, render_template
 
 app = Flask(__name__)
-
+# this is beautiful - amir
 @app.route("/")
 def home():
     return render_template("index.html")
@@ -10,6 +10,7 @@ def home():
 def LightGray():
     return render_template("LightGray.html")
 @app.route("/Gray")
+
 def Gray():
     return render_template("Gray.html")
 

@@ -1,0 +1,23 @@
+#cont{
+    width: 100%;
+    height:500px;
+    display:flex;
+    border-style: solid;
+    justify-content: center;
+}
+#c1{
+    background-color: red;
+    width: 25%;
+}
+#c2{
+    background-color: blue;
+    width: 25%;
+}
+#c3{
+    background-color: green;
+    width: 25%;
+}
+#c4{
+    background-color: yellow;
+    width: 25%;
+}
