@@ -4,6 +4,7 @@
     display:flex;
     border-style: solid;
     justify-content: center;
+    overflow: hidden;
 }
 #c1{
     background-color: red;
@@ -20,4 +21,17 @@
 #c4{
     background-color: yellow;
     width: 25%;
+}
+#c1, #c2, #c3, #c4{
+    transition: all 0.1s ease-in-out;
+}
+#c1:hover, #c2:hover, #c3:hover, #c4:hover{
+    /*translate: 100px 20px;*/
+    transform: scalex(2);
+    
+    
+}
+#c1:hover p, #c2:hover p, #c3:hover p, #c4:hover p{
+    transform: scalex(.5);
+    color:white
 }
