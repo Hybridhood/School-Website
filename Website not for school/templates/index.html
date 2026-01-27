@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta http-equiv="refresh" boxent="5">
-    <meta name="viewport" boxent="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="5">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/static/css/styles.css">
     <title>Grayscale Website</title>
 </head>
 <body>
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
-    <div id = "header">
-        <div id = "logo">
+
+    <!-- HEADER -->
+    <div id="header">
+        <div id="logo">
             <span id="G">G</span>
             <span id="R">r</span>
             <span id="A">a</span>
@@ -21,172 +23,113 @@
             <span id="E">e</span>
         </div>
 
-
         <div id="buttons">
             <a href="{{ url_for('LightGray') }}">
-                <input type = "button" value = "Light Gray" >
+                <input type="button" value="Light Gray">
             </a>
             <a href="{{ url_for('Gray') }}">
-            <input type = "button" value = "Gray" >
+                <input type="button" value="Gray">
             </a>
             <a href="{{ url_for('DarkGray') }}">
-                <input type = "button" value = "Dark Gray" >
+                <input type="button" value="Dark Gray">
             </a>
             <a href="{{ url_for('DarkerGray') }}">
-                <input type = button value = "Darker Gray" >
+                <input type="button" value="Darker Gray">
             </a>
             <a href="{{ url_for('DarkestGray') }}">
-                <input type = "button" value = "Darkest Gray" >
+                <input type="button" value="Darkest Gray">
             </a>
-
-        </div>
-
-
-    </div>
-
-    <div id = "search">
-        <img src = "{{ url_for('static', filename='images/yup.png') }}">
-        <input onho="search()" type="search" id="csearch">
-        <div id = "menu">
-            
-        </div>
-
-    </div>
-    <div id = "spaces">
-        <a type = "button" value = "twin" href="{{ url_for('DarkestGray') }}">wow</a>
-    </div>
-    <div id = "colors">
-        <div id = "box">
-        <div id="c1">
-            <p>1</p>
-        </div>
-        <div id="c2">
-            <p></p>
-        </div>
-        <div id="c3">
-            <p></p>
-        </div>
-        <div id="c4">
-            <p></p>
-        </div>
-        </div>
-        <div id = "box">
-        <div id="c1">
-            <p></p>
-        </div>
-        <div id="c2">
-            <p></p>
-        </div>
-        <div id="c3">
-            <p></p>
-        </div>
-        <div id="c4">
-            <p></p>
-        </div>
-        </div>
-        <div id = "box">
-        <div id="c1">
-            <p></p>
-        </div>
-        <div id="c2">
-            <p></p>
-        </div>
-        <div id="c3">
-            <p></p>
-        </div>
-        <div id="c4">
-            <p></p>
-        </div>
-        </div>
-        <div id = "box">
-        <div id="c1">
-            <p></p>
-        </div>
-        <div id="c2">
-            <p></p>
-        </div>
-        <div id="c3">
-            <p></p>
-        </div>
-        <div id="c4">
-            <p></p>
-        </div>
-        </div>
-        <div id = "box">
-        <div id="c1">
-            <p></p>
-        </div>
-        <div id="c2">
-            <p></p>
-        </div>
-        <div id="c3">
-            <p></p>
-        </div>
-        <div id="c4">
-            <p></p>
-        </div>
-        </div>
-        <div id = "box">
-        <div id="c1">
-            <p></p>
-        </div>
-        <div id="c2">
-            <p></p>
-        </div>
-        <div id="c3">
-            <p></p>
-        </div>
-        <div id="c4">
-            <p></p>
-        </div>
-        </div>
-        <div id = "box">
-        <div id="c1">
-            <p></p>
-        </div>
-        <div id="c2">
-            <p></p>
-        </div>
-        <div id="c3">
-            <p></p>
-        </div>
-        <div id="c4">
-            <p></p>
-        </div>
-        </div>
-        <div id = "box">
-        <div id="c1">
-            <p></p>
-        </div>
-        <div id="c2">
-            <p></p>
-        </div>
-        <div id="c3">
-            <p></p>
-        </div>
-        <div id="c4">
-            <p></p>
-        </div>
-        </div>
-        <div id = "box">
-        <div id="c1">
-            <p></p>
-        </div>
-        <div id="c2">
-            <p></p>
-        </div>
-        <div id="c3">
-            <p></p>
-        </div>
-        <div id="c4">
-            <p></p>
         </div>
     </div>
 
+
+    <!-- NAVIGATION -->
+    <nav id="navlinks">
+        <a href="https://www.google.com">
+            <p>google</p>
+        </a>
+        <a href="https://www.google.com">
+            <p>google</p>
+        </a>
+        <a href="https://www.google.com">
+            <p>google</p>
+        </a>
+        <a href="https://www.google.com">
+            <p>google</p>
+        </a>
+    </nav>
+
+    <!-- SEARCH -->
+    <div id="search">
+        <img src="{{ url_for('static', filename='images/yup.png') }}">
+        <input onhover="search()" type="search" id="csearch">
+        <input type="button" id="menub" value="☰" onclick="show()">
     </div>
+    <!--  SEARCH MENU-->
+      <div id = "Search-Menu">
+        <p>
+            Search Menu
+        </p>
 
+      </div>
+    <!-- COLOR GRID -->
+    <div id="colors">
 
+        <div class="box">
+            <div class="color red">
+                <p>1</p>
+            </div>
+            <div class="color blue">
+            </div>
+            <div class="color green">
+            </div>
+            <div class="color yellow">
+            </div>
+        </div>
 
+        <div class="box">
+            <div class="color red">
+            </div>
+            <div class="color blue">
+            </div>
+            <div class="color green">
+            </div>
+            <div class="color yellow">
+            </div>
+        </div>
 
+        <div class="box">
+            <div class="color red">
+            </div>
+            <div class="color blue">
+            </div>
+            <div class="color green">
+            </div>
+            <div class="color yellow">
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="color red">
+            </div>
+            <div class="color blue">
+            </div>
+            <div class="color green">
+            </div>
+            <div class="color yellow">
+            </div>
+        </div>
+        <div class="box">
+            <div class="color red">
+            </div>
+            <div class="color blue">
+            </div>
+            <div class="color green">
+            </div>
+            <div class="color yellow">
+            </div>
+        </div>
+
+    </div>
 </body>
 </html>

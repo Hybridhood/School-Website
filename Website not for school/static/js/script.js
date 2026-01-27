@@ -1,32 +1,18 @@
 
 document.addEventListener('DOMContentLoaded', (event) => {
-    const inputBox = document.getElementById('search');
-    const spaces = document.getElementById('spaces');
-
-
-    inputBox.addEventListener('mouseenter', function() {
-        const spaces = document.getElementById('spaces');
-        spaces.style.display = 'flex'; 
-    });
-    spaces.addEventListener('mouseenter', function() {
-        
-        spaces.style.display = 'flex'; 
+    var menub = document.getElementById("menub");
+    const searchbar = document.getElementById("search");
+    menub.addEventListener('click', function() {
+         document.body.classList.toggle("menu-open");     
     });
 
-    spaces.addEventListener('mouseleave', function() {
-        
-        spaces.style.display = 'none'; 
+    searchbar.addEventListener('click', function() {
+         document.body.classList.toggle("menu-down");     
     });
- 
-    inputBox.addEventListener('mouseleave', function() {
-        const spaces = document.getElementById('spaces');
-        spaces.style.display = 'none'; 
-    });
+
+    
+
+
+
 });
 
-function wow(){
-    alert("Yikes")
-
-
-
-}
